@@ -45,6 +45,24 @@ public class pgm2 {
             System.out.println();
         }
     }
+    static void num1(){
+        for(int i=0;i<5;i++){
+            int count = i+1;
+            for(int j=0;j<5;j++){
+                System.out.print(count++ + " ");
+            }
+            System.out.println();
+        }
+    }
+    static void trianglenum(){
+        for(int i=0;i<5;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    
     public static void main(String args[]){
         for(int i=0;i<5;i++){
             for(int j=0;j<5;j++){
@@ -60,5 +78,10 @@ public class pgm2 {
         num();
         System.out.println();
         mulnum();
+        System.out.println();
+        num1();
+        System.out.println();
+        trianglenum();
+        
     }
 }
