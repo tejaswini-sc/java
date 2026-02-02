@@ -78,9 +78,9 @@ public class pgm2 {
             {
                 System.out.print(" ");
             }
-            for(int j=1;j<=k;j++)
+            for(int j=0;j<=k;j++)
             {
-                System.out.print(j);
+                System.out.print("*");
             }
             System.out.println();
         }
