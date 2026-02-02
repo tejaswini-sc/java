@@ -71,7 +71,7 @@ public class pgm2 {
         }
     }
     static void revtriangle(){
-        int n=5;
+        int n=10;
         for(int k=0;k<n;k++)
         {
             for(int i=0;i<(n-1)-k;i++)
@@ -83,7 +83,6 @@ public class pgm2 {
                 System.out.print("*");
             }
             System.out.println();
-
         }
     }
 
@@ -108,7 +107,7 @@ public class pgm2 {
         triangle();
         System.out.println();
         trianglenum();  
-          System.out.println();
+        System.out.println();
         revtriangle();      
     }
 }
