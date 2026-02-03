@@ -114,6 +114,49 @@ public class pgm5 {
             System.out.println();
         }
     }
+    static void numtri(){
+        int n=5;
+        for(int i=0;i<n;i++){
+            for(int k=0;k<(n-1)-i;k++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print(j+1+" ");
+            }
+            System.out.println();
+        }
+    }
+    static void holenumtri(){
+        int n=5;
+        for(int i=0;i<n;i++){
+            for(int k=0;k<(n-1)-i;k++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<=i;j++){
+                if(j==0 || j==i || i==(n-1) ){
+                    System.out.print(j+1 +" ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    static void rightangletri(){
+        int n=5;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                if (j==0 || j==i || i==n-1) {
+                    System.out.print(j+1 + " ");    
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+        System.out.println();
+        }
+    }
 
     public static void main(String args[]){
         for(int i=0;i<5;i++){
@@ -142,5 +185,11 @@ public class pgm5 {
         equaltri();
         System.out.println();
         holetri();    
+        System.out.println();
+        numtri();
+        System.out.println();
+        holenumtri();
+        System.out.println();
+        rightangletri();
     }
 }
