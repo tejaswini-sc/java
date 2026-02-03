@@ -167,7 +167,31 @@ public class pgm5 {
             System.out.println();
         }
     }
-
+    static void upsidetri(){
+        int n=5;
+        for(int i=1;i<=n;i++){
+            int count=i;
+            for(int j=1;j<=(n-i)+1;j++){
+                System.out.print(count++ + " ");
+            }
+            System.out.println();
+        }
+    }
+    static void holeupsidetri(){
+        int n=5;
+        for(int i=1;i<=n;i++){
+            int count=i;
+            for(int j=1;j<=(n-i)+1;j++){
+                if(j==1|| i==1 || j==(n-i)+1){
+                    System.out.print(count++ + " ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        } 
+    }
     public static void main(String args[]){
         for(int i=0;i<5;i++){
             for(int j=0;j<5;j++){
@@ -203,5 +227,9 @@ public class pgm5 {
         rightangletri();
         System.out.println();
         numtriangle();
+        System.out.println();
+        upsidetri();
+        System.out.println();
+        holeupsidetri();
     }
 }
