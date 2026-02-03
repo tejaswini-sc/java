@@ -229,7 +229,6 @@ public class pgm5 {
         numtriangle();
         System.out.println();
         upsidetri();
-        System.out.println();
-        holeupsidetri();
+
     }
 }
