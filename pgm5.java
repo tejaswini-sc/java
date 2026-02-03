@@ -157,6 +157,16 @@ public class pgm5 {
         System.out.println();
         }
     }
+    static void numtriangle(){
+        int n=5;
+        for(int i=0;i<=n;i++){
+            int count=i;
+            for(int j=0;j<i;j++){
+                System.out.print(count++ +" ");
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String args[]){
         for(int i=0;i<5;i++){
@@ -191,5 +201,7 @@ public class pgm5 {
         holenumtri();
         System.out.println();
         rightangletri();
+        System.out.println();
+        numtriangle();
     }
 }
