@@ -30,6 +30,15 @@ public class Assignment {
             System.out.println();
         }
     }
+    static void pt4(){
+        int n=5;
+        for(int i=n;i>=1;i--){
+            for(int j=0;j<n;j++){
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         int n=5;
         for(int i=0;i<n;i++){
@@ -47,6 +56,8 @@ public class Assignment {
         pt2();
         System.out.println();
         pt3();
+        System.out.println();
+        pt4();
     }
     
 }
