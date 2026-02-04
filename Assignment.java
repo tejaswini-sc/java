@@ -45,8 +45,8 @@ public class Assignment {
         }
         System.out.println();
         pt2();
-        // System.out.println();
-        // pt3();
+        System.out.println();
+        pt3();
     }
     
 }
