@@ -246,6 +246,30 @@ public class pgm5 {
             System.out.println();
         }
     }
+    static void pt5()
+    {
+        int n=5;
+        for(int i=1;i<=n;i++)
+        {
+            int count=1;
+            for(int k=1;k<=n-i;k++)
+            {
+                System.out.print("  ");
+            }
+            for(int j=1;j<=(2*i)-1;j++)
+            {
+                if(j<i)
+                {
+                    System.out.print(count++ + " ");
+                }
+                else
+                {
+                    System.out.print(count-- + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String args[]){
         for(int i=0;i<5;i++){
@@ -294,6 +318,8 @@ public class pgm5 {
         pt3();
         System.out.println();
         pt4();
+        System.out.println();
+        pt5();
 
     }
 }
