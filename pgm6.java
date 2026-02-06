@@ -55,20 +55,7 @@ public class pgm6 {
         System.out.println();
         }
     }
-    static void pt5()
-    {
-        int n=5;
-        char ch='A';
-        for(int i=1;i<=n;i++)
-        {
-            for(int j=1;j<=i;j++)
-            {
-                System.out.print(ch + " ");
-            }
-            ch++;
-            System.out.println();
-        }
-    }
+
     public static void main(String[] args) {
     pt1();
     System.out.println();
