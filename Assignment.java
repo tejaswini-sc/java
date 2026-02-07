@@ -64,6 +64,24 @@ public class Assignment {
                 System.out.println();
         }
     }
+    static void pt8(){
+        int n=5;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                if(i==j)
+                {
+                    System.out.print(i+1);
+                }
+                else
+                {
+                    System.out.print("0");
+                }
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         int n=5;
         for(int i=0;i<n;i++){
@@ -74,8 +92,8 @@ public class Assignment {
                 else{
                     System.out.print("1");
                 }   
-            }
             System.out.println();
+            }
         }
         System.out.println();
         pt2();
@@ -87,6 +105,8 @@ public class Assignment {
         pt5();
         System.out.println();
         pt6();
+        System.out.println();
+        pt8();
     }
     
 }
