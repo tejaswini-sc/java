@@ -124,7 +124,7 @@ public class Assignment {
         System.out.println();
         pt8();
         System.out.println();
-        pt10();
+        // pt10();
     }
     
 }
