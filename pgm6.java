@@ -79,7 +79,7 @@ public class pgm6 {
                 char chRev=(char)(ch+i-1);
                 for(int j=1;j<=i;j++)
                 {
-                    System.out.print(chRev--);
+                    System.out.print(chRev-- + " ");
                     ch++;
                 }
             }
@@ -87,7 +87,7 @@ public class pgm6 {
             {
                 for(int j=1;j<=i;j++)
                 {
-                    System.out.print(ch++);
+                    System.out.print(ch++ + " ");
                 }
             }
             System.out.println();
