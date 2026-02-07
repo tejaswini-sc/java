@@ -48,6 +48,22 @@ public class Assignment {
             System.out.println();
         }
     }
+    static void pt6(){
+        int n=5;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+                if((i+j)%2==0)
+                {
+                    System.out.print("0");
+                }
+                else
+                {
+                    System.out.print("1");
+                }
+                System.out.println();
+        }
+    }
     public static void main(String[] args) {
         int n=5;
         for(int i=0;i<n;i++){
@@ -69,6 +85,8 @@ public class Assignment {
         pt4();
         System.out.println();
         pt5();
+        System.out.println();
+        pt6();
     }
     
 }
