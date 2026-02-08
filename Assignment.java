@@ -131,6 +131,25 @@ public class Assignment {
             System.out.println();
         }
     }
+    static void pt13()
+    {
+        int n=5;
+        char ch='A';
+        for(int i=1;i<=n;i++)
+        {
+            for(int k=1;k<=n-i;k++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(ch+" ");
+            }
+            ch++;
+            System.out.println();
+        }
+
+    }
 
 
     public static void main(String[] args) {
@@ -164,6 +183,8 @@ public class Assignment {
         pt9();
         System.out.println();
         pt10();
+        System.out.println();
+        pt13();
 
     }
     
