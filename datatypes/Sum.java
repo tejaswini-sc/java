@@ -42,13 +42,20 @@ public class Sum {
     int side =sc.nextInt();
     System.out.println(4*side);
    }
+   static void circle()
+   {
+    Scanner sc = new Scanner(System.in);
+    int r = sc.nextInt();
+    double pi =3.142;
+    System.out.printf("%.4f",pi*r*r);
+   }
     public static void main(String[] args) {
-        // sum();
-        // System.out.println();
-        // product();
-        // dolar2rupee();
-        // recctangle();
+        sum();
+        System.out.println();
+        product();
+        dolar2rupee();
+        recctangle();
         square();
-
+        circle();
     }
 }
