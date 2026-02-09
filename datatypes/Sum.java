@@ -19,9 +19,22 @@ public class Sum {
         int c = scan.nextInt();
         System.out.println(a*b*c);
     }
+
+    static void dolar2rupee()
+    {
+        Scanner sc = new Scanner(System.in);
+        int dollar =sc.nextInt();
+        double rupee = 82.73;
+        System.out.printf("%.4f",dollar*rupee);
+
+    }
+
     public static void main(String[] args) {
         sum();
         System.out.println();
         product();
+        dolar2rupee();
+        // recctangle();
+
     }
 }
