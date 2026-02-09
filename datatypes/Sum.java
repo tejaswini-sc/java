@@ -35,14 +35,20 @@ public class Sum {
         int wid = sc.nextInt();
         int perimeter = 2*(len+wid);
         System.out.println(perimeter);
-
-    }
+   }
+   static void square()
+   {
+    Scanner sc = new Scanner(System.in);
+    int side =sc.nextInt();
+    System.out.println(4*side);
+   }
     public static void main(String[] args) {
         // sum();
         // System.out.println();
         // product();
         // dolar2rupee();
-        recctangle();
+        // recctangle();
+        square();
 
     }
 }
