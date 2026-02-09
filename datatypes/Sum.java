@@ -28,13 +28,21 @@ public class Sum {
         System.out.printf("%.4f",dollar*rupee);
 
     }
+    static void recctangle()
+    {
+        Scanner sc =new Scanner(System.in);
+        int len=sc.nextInt();
+        int wid = sc.nextInt();
+        int perimeter = 2*(len+wid);
+        System.out.println(perimeter);
 
+    }
     public static void main(String[] args) {
-        sum();
-        System.out.println();
-        product();
-        dolar2rupee();
-        // recctangle();
+        // sum();
+        // System.out.println();
+        // product();
+        // dolar2rupee();
+        recctangle();
 
     }
 }
