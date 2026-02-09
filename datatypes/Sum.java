@@ -60,6 +60,7 @@ public class Sum {
         recctangle();
         System.out.println("square perimeter");    
         square();
+        System.out.println("circle Area");
         circle();
     }
 }
