@@ -10,7 +10,18 @@ public class Sum {
         int b= scan.nextInt();
         System.out.println(a+b);
     }
+
+    static void product()
+    {
+        Scanner scan =new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = scan.nextInt();
+        System.out.println(a*b*c);
+    }
     public static void main(String[] args) {
         sum();
+        System.out.println();
+        product();
     }
 }
