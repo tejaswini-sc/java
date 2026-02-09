@@ -50,12 +50,17 @@ public class Sum {
     System.out.printf("%.4f",pi*r*r);
    }
     public static void main(String[] args) {
+        System.out.println("Sum of Two numbers");
         sum();
-        System.out.println();
+        System.out.println("product of three numbers");
         product();
+        System.out.println("dollar to rupees");
         dolar2rupee();
+        System.out.println("rectangle perimeter");
         recctangle();
+        System.out.println("square perimeter");    
         square();
+        System.out.println("circle Area");
         circle();
     }
 }
