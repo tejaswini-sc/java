@@ -47,9 +47,13 @@ class Counter{
         int c = sc.nextInt();
         int res=countDig(n);
         int res1 = fact(n);
+        System.out.println("Digit count");
         System.out.println(res);
+        System.out.println("factorial");
         System.out.println(res1);
+        System.out.println("avarage");
         System.out.println(avg(a, b, c));
+        System.out.println("sum of odd");
         System.out.println(sumofodd(n));
 
     }
