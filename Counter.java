@@ -38,23 +38,31 @@ class Counter{
         }
         return sum;
     }
+    static float circumfernce(int r)
+    {
+        float pi =3.142f;
+        return 2*pi*r;
+    }
 
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        int n = sc.nextInt();
-        int a=sc.nextInt();
-        int b= sc.nextInt();
-        int c = sc.nextInt();
-        int res=countDig(n);
-        int res1 = fact(n);
-        System.out.println("Digit count");
-        System.out.println(res);
-        System.out.println("factorial");
-        System.out.println(res1);
-        System.out.println("avarage");
-        System.out.println(avg(a, b, c));
-        System.out.println("sum of odd");
-        System.out.println(sumofodd(n));
+        // int n = sc.nextInt();
+        // int a=sc.nextInt();
+        // int b= sc.nextInt();
+        // int c = sc.nextInt();
+        int r =sc.nextInt();
+        // int res=countDig(n);
+        // int res1 = fact(n);
+        // System.out.println("Digit count");
+        // System.out.println(res);
+        // System.out.println("factorial");
+        // System.out.println(res1);
+        // System.out.println("avarage");
+        // System.out.println(avg(a, b, c));
+        // System.out.println("sum of odd");
+        // System.out.println(sumofodd(n));
+        System.out.println("circumfernce of circle");
+        System.out.println(circumfernce(r));
 
     }
 
