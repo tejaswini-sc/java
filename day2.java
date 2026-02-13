@@ -29,6 +29,15 @@ public class day2 {
             System.out.println("number is not 2 digit");
         }
     }
+    static void endzero(int n)
+    {
+        if(n%10==0){
+            System.out.println("end with zero");
+        }
+        else{
+            System.out.println("not");
+        }
+    }
     public static void main(String[] args) {
       Scanner scan =new Scanner(System.in);
       int n=scan.nextInt();
@@ -36,5 +45,6 @@ public class day2 {
       System.out.println();
       removelastdigit(n); 
       twodigits(n);
+      endzero(n);
     } 
 }
