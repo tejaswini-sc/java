@@ -11,9 +11,17 @@ public class day2 {
             System.out.println("odd");
         }
     }
+    static void removelastdigit(int n)
+    {
+        n=n/10;
+        System.out.println(n);
+
+    }
     public static void main(String[] args) {
       Scanner scan =new Scanner(System.in);
       int n=scan.nextInt();
-      evenodd(n);  
+      evenodd(n); 
+      System.out.println();
+      removelastdigit(n); 
     } 
 }
