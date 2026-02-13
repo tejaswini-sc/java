@@ -45,6 +45,7 @@ public class day2 {
       System.out.println();
       removelastdigit(n); 
       twodigits(n);
+      System.out.println();
       endzero(n);
     } 
 }
