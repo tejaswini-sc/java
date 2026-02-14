@@ -39,13 +39,16 @@ public class day2 {
         }
     }
     public static void main(String[] args) {
-      Scanner scan =new Scanner(System.in);
-      int n=scan.nextInt();
-      evenodd(n); 
-      System.out.println();
-      removelastdigit(n); 
-      twodigits(n);
-      System.out.println();
-      endzero(n);
+    //   Scanner scan =new Scanner(System.in);
+    //   int n=scan.nextInt();
+    //   evenodd(n); 
+    //   System.out.println();
+    //   removelastdigit(n); 
+    //   twodigits(n);
+    //   System.out.println();
+    //   endzero(n);
+      double x = 10.0;
+short y = 10;
+System.out.println(x==y);
     } 
 }
