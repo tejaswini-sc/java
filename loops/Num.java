@@ -32,13 +32,20 @@ public class Num {
 
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
-        int n=sc.nextInt();
-        for(int i=1;i<=10;i++)
-        {
-            System.out.println(i);
-        }
-        evennum(n);
-        tables(n);
-        sumofN(n);
+        // int n=sc.nextInt();
+        // for(int i=1;i<=10;i++)
+        // {
+        //     System.out.println(i);
+        // }
+        // evennum(n);
+        // tables(n);
+        // sumofN(n);
+int x = 10;//11
+
+int y = 6;
+
+int res = x++ + ++y + --y + x-- + y++;
+        //10   +  7 +   6  +  11 + 6
+System.out.println(res);
     }
 }
