@@ -8,6 +8,18 @@ public class pgm2 {
         System.out.println();
         }
     }
+
+    static void pattern1()
+    {
+        for(int i=0;i<5;i++){
+            for(int j=0;j<5;j++){
+                System.out.print(i+1);
+            }
+            System.out.println();
+        }
+        System.out.println();
+        
+    }
     static void holo(){
         // int n=5;
         for(int i=0;i<5;i++){
@@ -104,8 +116,11 @@ public class pgm2 {
                 System.out.print(" ");
             }
             for(int j=0;j<=i;j++){
-                if(j==0 ||j==i || i==0 ){
+                if(j==0 ||j==i || i==n-1 ){
                     System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
                 }
             }
             System.out.println();
@@ -113,31 +128,98 @@ public class pgm2 {
     }
 
     public static void main(String swapna[]){
-        for(int i=0;i<5;i++){
-            for(int j=0;j<5;j++){
-                System.out.print(i+1);
-            }
-            System.out.println();
-        }
-        System.out.println();
         pattern();
+        //output
+        // 12345
+        // 12345
+        // 12345
+        // 12345
+        // 12345
+        System.out.println();
+        pattern1();
+        //output
+        // 11111
+        // 22222
+        // 33333
+        // 44444
+        // 55555
         System.out.println();
         holo();
+        //output
+        // *****
+        // *   *
+        // *   *
+        // *   *
+        // *****
+
         System.out.println();
-        num();
+        num();        
+        //output
+        // 01 02 03 04 05 
+        // 06 07 08 09 10
+        // 11 12 13 14 15
+        // 16 17 18 19 20
+        // 21 22 23 24 25
+
         System.out.println();
         mulnum();
+        //output
+        // 01 02 03 04 05
+        // 02 04 06 08 10 
+        // 03 06 09 12 15 
+        // 04 08 12 16 20
+        // 05 10 15 20 25
         System.out.println();
         num1();
+        //output
+        // 1 2 3 4 5
+        // 2 3 4 5 6
+        // 3 4 5 6 7
+        // 4 5 6 7 8
+        // 5 6 7 8 9
+
         System.out.println();
         triangle();
+        //output
+        // *
+        // **
+        // ***
+        // ****
+        // *****
         System.out.println();
         trianglenum();  
+        //output
+        // 1
+        // 12
+        // 123
+        // 1234
+        // 12345
         System.out.println();
-        revtriangle();      
+        revtriangle();   
+        //output
+        //         *
+        //       * *
+        //     * * *
+        //   * * * *
+        // * * * * *
+   
         System.out.println();
         equaltri();
+        //output
+        //     *
+        //    * *
+        //   * * *
+        //  * * * *
+        // * * * * *
         System.out.println();
         holetri();
+        //output
+        //     *
+        //    * *
+        //   *   *
+        //  *     *
+        // * * * * *
     }
 }
+
+

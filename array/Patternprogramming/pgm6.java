@@ -1,3 +1,4 @@
+package Patternprogramming;
 public class pgm6 {
     static void pt1()
     {
