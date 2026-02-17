@@ -1,27 +1,24 @@
-// import java.util.Scanner;
+class SecondLargest {
+    public static void main(String[] args) {
 
-// public class seclargest {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         System.out.println("enter n");
-//         int n=sc.nextInt();
-//         int a[] =new int[n];
-//         System.out.println("enter values");
-//         for(int i=0;i<n;i++)
-//         {
-//             a[i]=sc.nextInt();
-//         }
-//         int max1=-999;
-//         int max2 =-999;
-//         for(int i=0;i<n;i++)
-//         {
-//             if(a[i]>max1)
-//             {
-//                 max1=max2;
-//                 max2=a[i];
-//             }
-//         }
-//         System.out.println("second largest is"+max2);
+        int[] arr = {10, 25, 5, 40, 35};
 
-//     }
-// }
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                secondLargest = largest;
+                largest = arr[i];
+            } else if (arr[i] > secondLargest && arr[i] != largest) {
+                secondLargest = arr[i];
+            }
+        }
+
+        if (secondLargest == Integer.MIN_VALUE) {
+            System.out.println("Second largest element not found");
+        } else {
+            System.out.println("Second largest element: " + secondLargest);
+        }
+    }
+}
