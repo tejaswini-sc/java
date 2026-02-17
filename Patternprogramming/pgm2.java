@@ -1,3 +1,4 @@
+package Patternprogramming;
 public class pgm2 {
 
     static void pattern(){
