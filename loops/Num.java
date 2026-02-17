@@ -4,6 +4,17 @@ import java.util.Scanner;
 
 public class Num {
 
+    static void factors(int n)
+    {
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+
     static void evennum(int n)
     {
         for(int i=0;i<n;i++)
@@ -33,26 +44,13 @@ public class Num {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         int n=sc.nextInt();
-        // for(int i=1;i<=10;i++)
-        // {
-        //     System.out.println(i);
-        // }
-        // evennum(n);
-        // tables(n);
-        // sumofN(n);
-// int x = 10;//11
-
-// int y = 6;
-
-// int res = x++ + ++y + --y + x-- + y++;
-//         //10   +  7 +   6  +  11 + 6
-// System.out.println(res);
-    for(int i=1;i<n;i++)
-    {
-        System.out.print(2*i);
-    }
-
-
-
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(i);
+        }
+        evennum(n);
+        tables(n);
+        sumofN(n);
+        factors(n);
     }
 }
