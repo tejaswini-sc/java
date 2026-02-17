@@ -15,6 +15,18 @@ public class Num {
         }
     }
 
+    static void countfactor(int n)
+    {
+        int count=0;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
     static void evennum(int n)
     {
         for(int i=0;i<n;i++)
@@ -52,5 +64,6 @@ public class Num {
         tables(n);
         sumofN(n);
         factors(n);
+        countfactor(n);
     }
 }
