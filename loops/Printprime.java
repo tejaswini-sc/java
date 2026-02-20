@@ -1,29 +1,25 @@
-package loops;
 
 import java.util.Scanner;
 
 public class Printprime {
     
-    String printPrimes(int n)
+    static String primes(int n)
     {
-        for(int i=2;i*i<=n;i++)
+        int count =0;
+        for(int i=1;i<=n;i++)
         {
             if(n%i==0)
-            {
-                return "not prime";
-            }
+                count++;
         }
-        return "prime";
+        if(count==2)
+            return "prime";
+        else
+            return "not prime";
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        for(int i=1;i<=n;i++)
-        {
-            if(printPrimes(i))
-                System.out.println(i);    
-        }
-        
-    }
-    
+        String res = primes(n);
+        System.out.println(res);
+       }
 }
