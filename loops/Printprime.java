@@ -60,7 +60,7 @@ static Boolean primeOrNot(int n)
     static void firstNPrimes(int n)
     {
         int count=0;
-        for(int i=1;count<n;i++)
+        for(int i=2;count<n;i++)
         {
             if(primeOrNot(i))
             {
@@ -74,10 +74,10 @@ static Boolean primeOrNot(int n)
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n1=sc.nextInt();
-        // int n2=sc.nextInt();
+        int n2=sc.nextInt();
         // String res = primeOrNot3(n);
         // System.out.println(res);
-        // printPrime(n1, n2);
-        firstNPrimes(n1);
+        printPrime(n1, n2);
+        // firstNPrimes(n1);
     }
 }
