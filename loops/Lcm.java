@@ -15,9 +15,7 @@ public class Lcm {
         int n = sc.nextInt();
         int m = sc.nextInt();
         // implement your logic here
-        int HCF=Hcf(n,m);
-        System.out.println(HCF);
-        int LCM =(n*m)/HCF;
+      
         System.out.println(LCM);
     }
 }
