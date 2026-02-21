@@ -16,7 +16,7 @@ public class Avg {
         {
             sum=sum+a[i];
         }
-        int avg=sum/n;
-        System.out.println(avg);
+        float avg=sum/n;
+        System.out.printf("%.2f",avg);
     }
 }
