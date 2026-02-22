@@ -13,6 +13,6 @@ public class Arraysum {
         {
             sum=sum+a[j];
         }
-        System.out.println(sum);
+        System.out.println("sum of array elements"+sum);
     }
 }
