@@ -30,7 +30,5 @@ public class LastOccur {
         System.out.println("enter k value to seacrch");
         int k=sc.nextInt();
         System.out.println(lastocurance(ar,k));
-        
-        
     }
 }
