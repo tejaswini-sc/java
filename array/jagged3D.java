@@ -6,12 +6,12 @@ public class jagged3D {
         int a[][][]=new int[2][][];
         for(int i=0;i<2;i++)
         {
-            System.out.println("enter schools values");
+            System.out.println("enter class values"+i);
             int n=sc.nextInt();
             a[i]=new int[n][];
             for(int j=0;j<a[i].length;j++)
             {
-                System.out.println("enter student");
+                System.out.println("enter class "+i+" student values "+j);
                 int m=sc.nextInt();
                 a[i][j]=new int[m];
                 for(int k=0;k<a[i][j].length;k++)
