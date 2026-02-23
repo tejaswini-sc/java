@@ -1,7 +1,6 @@
-import java.net.Socket;
 import java.util.Scanner;
 
-public class jagged1D {
+public class jagged2D {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int[][] a=new int[2][];
