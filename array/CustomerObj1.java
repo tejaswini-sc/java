@@ -12,7 +12,8 @@ public class CustomerObj1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Customers []a=new Customers[3];
+		int n=sc.nextInt();
+		Customers []a=new Customers[n];
 		
 		for(int i=0;i<3;i++)
 		{
