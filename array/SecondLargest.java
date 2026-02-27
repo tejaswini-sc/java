@@ -1,24 +1,37 @@
-class SecondLargest {
-    public static void main(String[] args) {
+import java.util.*;
 
-        int[] arr = {10, 25, 5, 40, 35};
+public class SecondLargest {
 
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
-
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > largest) {
-                secondLargest = largest;
-                largest = arr[i];
-            } else if (arr[i] > secondLargest && arr[i] != largest) {
-                secondLargest = arr[i];
+    public static int secondlargestNumber(int[] arr) {
+        // write your code here
+        int max1=Integer.MIN_VALUE;
+        int max2=Integer.MIN_VALUE;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]>max1)
+            {
+                max2=max1;
+                max1=arr[i];
+            }
+            else if(arr[i]>max2 && max1!=arr[i])
+            {
+                max2=arr[i];
             }
         }
+        return max2;        
+    }
 
-        if (secondLargest == Integer.MIN_VALUE) {
-            System.out.println("Second largest element not found");
-        } else {
-            System.out.println("Second largest element: " + secondLargest);
-        }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		int[] ar = new int[n];
+		
+		for(int i=0; i<ar.length; i++)
+		{
+			ar[i] = scan.nextInt();
+		}
+		
+		System.out.println(secondlargestNumber(ar));
+        
     }
 }
