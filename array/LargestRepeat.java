@@ -10,6 +10,7 @@ public class LargestRepeat {
             a[i]=scanner.nextInt();
         }
         int repeat=-1;
+        int min=Integer
         boolean found=false;
         for(int i=a.length-1;i>=1;i--)
         {
