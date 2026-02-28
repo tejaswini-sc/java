@@ -1,19 +1,27 @@
 import java.util.Scanner;
 
 public class MissingNum {
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();   
-        int[] nums = new int[n];
-        for (int i = 0; i < n; i++) {
-            nums[i] = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=scanner.nextInt();
         }
-        int expectedSum = n * (n + 1) / 2;
-        int actualSum = 0;
-        for (int i = 0; i < n; i++) {
-            actualSum += nums[i];
-        }
-        int missing = expectedSum - actualSum;
-        System.out.println(missing);
+        int res=findMissingElement(a);
+        System.out.print(res);
+    }
+
+    public static int findMissingElement(int[] a) {
+       int n=a.length+1;
+       int sum=n*(n+1)/2;
+       int arrSum=0;
+       for(int i=0;i<a.length;i++)
+       {
+            arrSum+=a[i];
+       }
+       return sum-arrSum;
     }
 }
