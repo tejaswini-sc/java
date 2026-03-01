@@ -18,6 +18,6 @@ public class CountPair {
           count++;   
         }
     }
-    System.out.print(count);
+    System.out.print(" count is "+ count);
   }
 }
