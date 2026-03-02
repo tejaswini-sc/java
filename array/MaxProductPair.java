@@ -17,6 +17,7 @@ public class MaxProductPair {
             for (int j = i + 1; j < n; j++) {
                 int product = a[i] * a[j];
                 if (product > maxProduct) {
+                    maxProduct = product;
                 }
             }
         }
