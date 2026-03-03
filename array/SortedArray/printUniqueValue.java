@@ -4,6 +4,7 @@ public class printUniqueValue {
 
     public static void uniqueNum(int a[])
     {
+        int uniquecount=0;
         int count=1;
         for(int i=0;i<a.length-1;i++)
         {
@@ -16,14 +17,17 @@ public class printUniqueValue {
                 if(count==1)
                 {
                     System.out.println(a[i]);
+                    uniquecount++;
                 }
                 count=1;
             }
         }
         if(count==1)
         {
-            System.out.print(a[a.length-1]);
+            System.out.println(a[a.length-1]);
+            uniquecount++;
         }
+        System.out.print("unique counts "+uniquecount );
         
     }
     
