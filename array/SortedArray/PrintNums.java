@@ -1,7 +1,7 @@
 package SortedArray;
 import java.util.*;
-public class PrintUniqueNum {
-    public static void nonrepate(int a[])
+public class PrintNums {
+    public static void arraywithoutrepeat(int a[])
     {
         for(int i=0;i<a.length-1;i++)
         {
