@@ -22,6 +22,6 @@ public class PrintNums {
         {
             a[i]=sc.nextInt();
         }
-        nonrepate(a);
+        arraywithoutrepeat(a);
     }    
 }
