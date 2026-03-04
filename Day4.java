@@ -49,8 +49,8 @@ public class Day4 {
 		int m = sc.nextInt();
 		//		string res= CheckPrime(n);
 		string res1=CheckPrime1(n);
-		System.out.println(res);
-		System.out.println(res);
+		System.out.println(res1);
+		System.out.println(res1);
 		
 	}
 
