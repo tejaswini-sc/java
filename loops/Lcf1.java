@@ -21,7 +21,5 @@ public class Lcf1 {
                 break;
             }
         }
-    }
-} {
-    
+    }    
 }
