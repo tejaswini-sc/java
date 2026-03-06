@@ -31,7 +31,7 @@ public class Shopping {
 
         System.out.println("enter the item to search in the list");
         String item=sc.next();
-        if(search(items,item)){
+                if(search(items,item)){
             System.out.print("found");            
         }
         else{
