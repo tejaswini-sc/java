@@ -22,6 +22,8 @@ public class FirstNotSorted {
             }
         }
 
-        
+        if(!found) {
+            System.out.println("Array is sorted");
+        }
     }
 }
