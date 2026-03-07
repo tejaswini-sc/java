@@ -11,6 +11,8 @@ public class Endzero {
             System.out.println("yes");
         }
         else
-     
+        {
+            System.out.println("no");
+        }
     }   
 }
