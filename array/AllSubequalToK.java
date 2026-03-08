@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class AllSubequalToK {
 
     static void subarrayOfSize(int[]arr, int size) {
         for(int i=0;i<arr.length-size;i++)
