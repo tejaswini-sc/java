@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Subarraysum {
+
+    static void subarrayOfSize(int[]arr, int k) 
+    {
+        boolean found=false;
+        for(int i=arr.length-1;i<=0;i--)
+        {
+            int sum=0;
+            for(int j=i;j<arr.length;j++)
+            {
+                sum=sum+arr[j];
+                if(sum==k)
+                {
+                    for(int x=i;x<=j;x++)
+                    {
+                        System.out.print(arr[x]+" ");
+                    }
+                    System.out.println();
+                    found=true;
+                }
+            }
+        }
+        if(found == false)
+        {
+            
+            System.out.print("None");
+        }
+    }
+        
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int[] arr = new int[N];
+        for (int i = 0; i < arr.length; i++) 
+        {
+            arr[i] = scanner.nextInt();
+        }
+        int k = scanner.nextInt();
+        subarrayOfSize(arr,k);
+    }
+}
