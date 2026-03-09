@@ -1,7 +1,9 @@
+import java.util.Scanner;
+
 public class Typecast {
     public static void main(String[] args) {
-        char a= 'A';
-        int b=(int)a;
-        System.out.print(b);
+      Scanner sc =new Scanner(System.in);
+      String word= sc.next();
+      System.out.print(word);
     }    
 }
