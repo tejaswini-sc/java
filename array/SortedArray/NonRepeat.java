@@ -1,10 +1,10 @@
 package SortedArray;
+import java.util.Scanner;
 
 public class NonRepeat {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        int n=scanner.nextInt();
         int a[]=new int[n];
         for(int i=0;i<n;i++)
         {
@@ -16,12 +16,22 @@ public class NonRepeat {
         {
             b[i]=scanner.nextInt();
         }
-        for(int i=n1,k=0;i>=0,k<b.length;i--,k++)
+        int i=0,j=0;
+        while(j<b.length && i<a.length)
         {
-            b[k]=b[i];
-            System.out.print(b[k]+" ");
-            
+            if(a[i]==b[j])
+            {
+                System.out.print(a[i]+" ");
+                i++;
+                j++;
+            }
+            else if(a[i]>b[i])
+            {
+                j++;
+            }
+            else{
+                i++;
+            }
         }
-        
     }
 }
