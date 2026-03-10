@@ -40,7 +40,7 @@ public class NonReeatedElement {
             System.out.print(a[i]+" ");
             i++;
         }        
-        while(<n1)
+        while(j<n1)
         {
             System.out.print(a[i]+" ");
         }        
