@@ -18,6 +18,7 @@ public class PrintAllSubSum {
                 {
                     sum=sum+a[j];
                 }
+                System.out.println(sum);
             }
         }
     }
