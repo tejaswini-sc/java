@@ -13,7 +13,7 @@ public class PrintSubArrSumK {
         int size=sc.nextInt();
         int k=sc.nextInt();
         int sum=0;
-        int count=0;
+        
         for(int i=0;i<=n-size;i++)
         {   
             sum=0;
