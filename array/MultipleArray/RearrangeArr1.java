@@ -28,7 +28,10 @@ public class RearrangeArr1 {
             a[j]=0;
             j--;
         }
-        
+        for(int k=0;k<n;k++)
+        {
+            System.out.print(a[k]+" ");
+        }  
     }
 
 }
