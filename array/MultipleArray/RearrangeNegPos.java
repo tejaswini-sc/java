@@ -27,13 +27,7 @@ public class RearrangeNegPos {
                 j++;        
             }
         }
-   
-
         
-        for(int k=0;k<n;k++)
-        {
-            System.out.print(a[k]+" ");
-        }
     }
 
 }
