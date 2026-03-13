@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Bank
 {
     private int bal;
@@ -6,7 +8,10 @@ class Bank
         if(x>=0)
             bal=x;
         else
+        {
             System.out.println("not possible");
+            System.exit(0);
+        }
         
     }
     int getData()
@@ -18,8 +23,10 @@ class Bank
 
 public class Encapsulation {
     public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+    int bal = s.nextInt();
     Bank b = new Bank();   
-    b.setData(-1000);
+    b.setData(bal);
     int res= b.getData();
     System.out.println(res);
     }
