@@ -6,9 +6,15 @@ public class CheckEqual {
         Scanner sc=new Scanner(System.in);
         String s = sc.nextLine();
         String c=sc.next();
-        String ch=sc.next();
-        System.out.println(s.replace(ch, c).toLowerCase());
-        
+        // String ch=sc.next();
+        // System.out.println(s.replace(ch, c).toLowerCase());
+        int count=0;
+        for(int i=0;i<s.length();i++)
+        {
+            count++;
+            
+        }
+        System.out.print(count);
         
         // String []a=s.split(" ");
         // for(String i:a)
