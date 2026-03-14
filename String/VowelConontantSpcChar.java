@@ -34,6 +34,8 @@ public class VowelConontantSpcChar {
         System.out.println("Vowels: "+Vcount);
         System.out.println("Consonants: "+Ccount);
         System.out.println("Special Characters: "+Sc);
+        System.out.println("Numeric count: "+Ncount);
+        
 
     }
 
