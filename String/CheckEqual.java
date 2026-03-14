@@ -8,6 +8,7 @@ public class CheckEqual {
         String c=sc.next();
         // String ch=sc.next();
         // System.out.println(s.replace(ch, c).toLowerCase());
+        
         int count=0;
         for(int i=0;i<s.length();i++)
         {
@@ -16,6 +17,7 @@ public class CheckEqual {
         }
         System.out.print("charecter count "+count);
 
+        
         for(int i=0;i<s.length();i++)
         {
             char ch=s.charAt(i);
@@ -25,6 +27,7 @@ public class CheckEqual {
             }
         }
         System.out.print("numeric count"+count);
+        
 
     
         // String []a=s.split(" ");
