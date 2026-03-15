@@ -42,7 +42,7 @@ class ProductApp {
         float price = sc.nextFloat();
 
         p.setData(pId, pname, quantity, price);
-
+        System.out.println(" product details");
         p.getId();
         p.getName();
         p.getQun();
