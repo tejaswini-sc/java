@@ -34,7 +34,7 @@ class ProductApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Product p = new Product();
-
+        System.out.println("enter product details");
         int pId = sc.nextInt();
         sc.nextLine();
         String pname = sc.nextLine();
