@@ -15,6 +15,7 @@ public class CharCount {
             }
         }        
             System.out.print(count);   
+            
     }
 }
 
