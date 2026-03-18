@@ -41,7 +41,7 @@ class Car {
         Scanner sc = new Scanner(System.in);
 
         Car1 s = new Car1();
-        System.out.println("Enter car information")
+        System.out.println("Enter car information");
         String make = sc.nextLine();
         String model = sc.nextLine();
         int year = sc.nextInt();
