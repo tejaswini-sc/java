@@ -17,15 +17,15 @@ public class CheckEqual {
         System.out.print("charecter count "+count);
 
         
-        for(int i=0;i<s.length();i++)
-        {
-            char ch=s.charAt(i);
-            if(ch>='0' && ch<='9')
-            {
-                count++;
-            }
-        }
-        System.out.print("numeric count"+count);
+        // for(int i=0;i<s.length();i++)
+        // {
+        //     char ch=s.charAt(i);
+        //     if(ch>='0' && ch<='9')
+        //     {
+        //         count++;
+        //     }
+        // }
+        // System.out.print("numeric count"+count);
     
          String []a=s.split(" ");
          for(String i:a)
