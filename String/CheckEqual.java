@@ -6,8 +6,8 @@ public class CheckEqual {
         Scanner sc=new Scanner(System.in);
         String s = sc.nextLine();
         String c=sc.next();
-        // String ch=sc.next();
-        // System.out.println(s.replace(ch, c).toLowerCase());
+         String ch=sc.next();
+         System.out.println(s.replace(ch, c).toLowerCase());
         
         int count=0;
         for(int i=0;i<s.length();i++)
@@ -27,34 +27,29 @@ public class CheckEqual {
             }
         }
         System.out.print("numeric count"+count);
-        
-
     
-        // String []a=s.split(" ");
-        // for(String i:a)
-        // {
-        //     System.out.println(i);
-        // }
+         String []a=s.split(" ");
+         for(String i:a)
+         {
+             System.out.println(i);
+         }
+         
+         String t = sc.nextLine();
+         int n=sc.nextInt();
+         System.out.println(s.substring(n));
 
+        System.out.println(s.isEmpty());
 
-        
-        // String t = sc.nextLine();
-        // int n=sc.nextInt();
-        // System.out.println(s.substring(n));
-
-    //    System.out.println(s.isEmpty());
-       
-
-        // System.out.println(s.charAt(n));
-        // System.out.println(s.trim());
-        // int c=s.indexOf(t);
-        // if(c>=0)
-        // {
-        //     System.out.print(c);
-        // }
-        // else{
-        //     System.out.println(-1);
-        // }
+         System.out.println(s.charAt(n));
+         System.out.println(s.trim());
+         int c=s.indexOf(t);
+         if(c>=0)
+         {
+             System.out.print(c);
+         }
+         else{
+             System.out.println(-1);
+         }
 
 
 
