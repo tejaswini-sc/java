@@ -41,14 +41,14 @@ public class CheckEqual {
 
          System.out.println(s.charAt(n));
          System.out.println(s.trim());
-         int c=s.indexOf(t);
-         if(c>=0)
-         {
-             System.out.print(c);
-         }
-         else{
-             System.out.println(-1);
-         }
+        //  int c=s.indexOf(t);
+        //  if(c>=0)
+        //  {
+        //      System.out.print(c);
+        //  }
+        //  else{
+        //      System.out.println(-1);
+        //  }
 
 
 
