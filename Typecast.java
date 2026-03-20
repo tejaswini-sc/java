@@ -8,7 +8,6 @@ public class Typecast {
       int n=sc.nextInt();
       int a[] =new int[n];
       System.out.println(a.length/2);
-            System.out.println((a.length+1)/2);
 
 
 
