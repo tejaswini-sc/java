@@ -1,3 +1,4 @@
+package Encapsulation;
 import java.util.*;
 
 class Restaurant {
@@ -86,7 +87,5 @@ class Resturants {
         System.out.println(r.getEmail());
         System.out.println(r.getPhone());
         System.out.println(r.getAddress());
-
-        sc.close();
     }
 }
