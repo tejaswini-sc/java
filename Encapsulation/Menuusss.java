@@ -35,8 +35,6 @@ class Menuusss {
         Scanner sc = new Scanner(System.in);
 
         String s = sc.nextLine();
-
-        // ✅ FIXED HERE
         String[] arr = s.split(",");
 
         Menu r = new Menu(
@@ -46,9 +44,5 @@ class Menuusss {
             arr[3]
         );
 
-        System.out.println(r.getId());
-        System.out.println(r.getName());
-        System.out.println(r.getPrice());
-        System.out.println(r.getDesc());
     }
 }
