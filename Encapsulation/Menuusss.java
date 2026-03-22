@@ -44,5 +44,9 @@ class Menuusss {
             arr[3]
         );
 
+        System.out.println(r.getId());
+        System.out.println(r.getName());
+        System.out.println(r.getPrice());
+        System.out.println(r.getDesc());
     }
 }
