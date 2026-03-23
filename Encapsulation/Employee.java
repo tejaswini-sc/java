@@ -1,6 +1,5 @@
 package Encapsulation;
 import java.util.Scanner;
-
 class Emp
 {
 	private int empId;
@@ -31,10 +30,8 @@ class Emp
 	}
 	public void setSalary(double salary) {
 		this.salary = salary;
-	}
-	
+	}	
 }
-
 public class Employee {
 
 	public static void main(String[] args) {
@@ -55,11 +52,9 @@ public class Employee {
 			
 			String[] ar = str.split(",");
 			
-			
 			empArr[i].setEmpId(Integer.parseInt(ar[0].trim()));
 			empArr[i].setEmpName(ar[1]);
-			empArr[i].setSalary(Integer.parseInt(ar[2].trim()));
-			
+			empArr[i].setSalary(Integer.parseInt(ar[2].trim()));			
 		} 
 		for(int i=0;i<n;i++)
 		{

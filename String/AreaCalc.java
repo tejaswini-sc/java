@@ -1,4 +1,3 @@
-
 class ShapeAreaCalculator {
 
 	int calculateArea(int a) {

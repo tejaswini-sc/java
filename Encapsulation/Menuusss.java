@@ -42,7 +42,7 @@ class Menuusss {
             arr[1],
             Double.parseDouble(arr[2]),
             arr[3]
-        );
+        );s
 
         System.out.println(r.getId());
         System.out.println(r.getName());
