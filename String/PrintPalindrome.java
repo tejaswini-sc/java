@@ -18,6 +18,28 @@ public class PrintPalindrome {
         }
         return true;
     }
+
+    static void largestLpalindrome(String s){
+
+        for(int len=s.length()-1;len>=0;len--)
+        {
+            for(int i=0;i<s.length()-len;i++)
+            {
+                String t="";
+                for(int j=i;j<len+i;j++)
+                {
+                    char ch=s.charAt(j);
+                    t=t+ch;
+                }
+                // System.out.println(t);
+                if(isPalindrome(t))
+                {
+                    System.out.println(t);
+                    return;
+                }
+            }
+        }
+    }
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
@@ -34,5 +56,7 @@ public class PrintPalindrome {
             if(isPalindrome(t))
                 System.out.println(t);
         }
+        System.out.println("largest palindrome");
+        largestLpalindrome(s);
     } 
 }
