@@ -15,8 +15,8 @@ public class PrintWords {
             }
         }
         System.out.println(t);
-        for(int i=0;i<ar.length;i++){
-            System.out.println(ar[i]);
-        }
+        // for(int i=0;i<ar.length;i++){
+        //     System.out.println(ar[i]);
+        // }
     }   
 }
