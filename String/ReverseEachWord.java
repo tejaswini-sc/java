@@ -15,6 +15,8 @@ public class ReverseEachWord {
         String string = scanner.nextLine();
         String[] s = string.split(" ");
 
-        
+        for (int i = 0; i < s.length; i++) {
+            System.out.print(reverse(s[i]) + " ");
+        }
     }
 }
