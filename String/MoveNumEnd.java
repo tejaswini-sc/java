@@ -18,6 +18,6 @@ public class MoveNumEnd {
                 s=s+ch;
             }
         }
-      
+       System.out.print(t+s);
     }
 }
