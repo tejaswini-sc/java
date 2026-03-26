@@ -39,22 +39,7 @@ class OnlineCourse extends Course {
     }
 }
 
-class OfflineCourse extends Course {
-    private String location;
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    @Override
-    public String getDetails() {
-        return super.getDetails() + ", Location: " + location;
-    }
-}
 
 public class Courseeee {
     public static void main(String[] args) {
