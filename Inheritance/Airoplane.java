@@ -13,17 +13,7 @@ class Plane
 		System.out.println("plane is Land");
 	}
 }
-class CragoPlane extends Plane{
-	@Override
-	void fly(){
-		System.out.println("cargo plane flies at loewr");
-	}
-	
-	void carrycargo() {
-		System.out.println("carry carge");
-	}
-	
-}
+
 class PassengerPlane extends Plane
 {
 	@Override
