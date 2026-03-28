@@ -60,14 +60,8 @@ public class ApartmentDetails {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input: address,floors,noOfApartments,unitNumber
         String s = scanner.nextLine();
         String[] a = s.split(",");
-
-        if (a.length < 4) {
-            System.out.println("Invalid input");
-            return;
-        }
 
         String address = a[0];
         int floors = Integer.parseInt(a[1]);
