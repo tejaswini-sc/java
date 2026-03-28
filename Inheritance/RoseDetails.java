@@ -9,7 +9,6 @@ class Plant {
         this.height = height;
     }
 
-    // ✅ Fixed getters
     public String getSpecies() {
         return species;
     }
@@ -61,14 +60,8 @@ public class RoseDetails {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input: species,height,flowerColor,thorns
         String s = scanner.nextLine();
         String[] a = s.split(",");
-
-        if (a.length < 4) {
-            System.out.println("Invalid input");
-            return;
-        }
 
         String species = a[0];
         String height = a[1];
