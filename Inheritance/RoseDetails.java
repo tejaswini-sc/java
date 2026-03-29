@@ -73,6 +73,6 @@ public class RoseDetails {
         r.setFlowerColor(flowerColor);
         r.setThorns(thorns);
 
-        
+        System.out.println("Rose Details: " + r.getDetails());
     }
 }
