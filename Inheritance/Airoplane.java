@@ -53,7 +53,10 @@ public class Airoplane {
 
 	public static void main(String[] args) {
 		CragoPlane cp =new CragoPlane();
-
+		cp.takeoff();
+		cp.fly();
+		cp.land();
+		cp.carrycargo();
 	}
 
 }
