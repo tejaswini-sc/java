@@ -3,7 +3,8 @@ import java.util.*;
 public class MaxDisjoint {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        String s=sc.nextLine().toLowerCase();
+        
         int n = sc.nextInt();
         int[] arr = new int[n];
 
