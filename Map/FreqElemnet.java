@@ -38,5 +38,6 @@ public class FreqElemnet {
             }
         }
 
+        System.out.print(num);
     }
 }
