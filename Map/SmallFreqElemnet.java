@@ -24,8 +24,6 @@ public class SmallFreqElemnet {
                 map.put(a[i], 1);
             }
         }
-
-        // Find most frequent
         int min = 0;
         int num = a[0];
 
