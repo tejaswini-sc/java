@@ -7,7 +7,6 @@ abstract class ThreeDShape {
     abstract void calVolume();
 }
 
-// Cube
 class Cube extends ThreeDShape {
     float side;
 
@@ -23,7 +22,6 @@ class Cube extends ThreeDShape {
     }
 }
 
-// Cylinder
 class Cylinder extends ThreeDShape {
     float radius, height;
 
@@ -40,7 +38,6 @@ class Cylinder extends ThreeDShape {
     }
 }
 
-// Sphere
 class Sphere extends ThreeDShape {
     float radius;
 
@@ -56,7 +53,6 @@ class Sphere extends ThreeDShape {
     }
 }
 
-// Main
 public class Volume {
     public static void main(String[] args) {
 
