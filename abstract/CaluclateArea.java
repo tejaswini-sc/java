@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// Abstract class Shape
 abstract class Shape {
     static Scanner sc = new Scanner(System.in); // ✅ single shared Scanner
     float area;
@@ -13,7 +12,6 @@ abstract class Shape {
     }
 }
 
-// Subclass Square
 class Square extends Shape {
     float side;
 
@@ -28,7 +26,6 @@ class Square extends Shape {
     }
 }
 
-// Subclass Rectangle
 class Rectangle extends Shape {
     float length, breadth;
 
@@ -59,13 +56,12 @@ class Circle extends Shape {
     }
 }
 
-// Main class
 public class CaluclateArea {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
-        String type = scanner.next(); // ✅ important: use next()
+        String type = scanner.next();  
 
         Shape s;
 
