@@ -80,8 +80,8 @@ public class CaluclateArea {
             return;
         }
 
-        // s.acceptInput();
-        // s.calcArea();
-        // System.out.println("Area of " + type + ": " + s.getArea());
+        s.acceptInput();
+        s.calcArea();
+        System.out.println("Area of " + type + ": " + s.getArea());
     }
 }
