@@ -1,3 +1,4 @@
+// package abstract;
 import java.util.Scanner;
 
 abstract class Shape {
