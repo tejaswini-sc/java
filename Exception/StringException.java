@@ -10,8 +10,10 @@ public class StringException {
         try{
             int n=sc.nextInt();
             int a[]=new int[n];
+            int b[]={1,2,3,4,5};
             String s= sc.nextLine();
             int index=sc.nextInt();      
+            System.out.println(b[index]);
             System.out.print(s.charAt(index));
         }
         catch(StringIndexOutOfBoundsException e){
@@ -22,6 +24,9 @@ public class StringException {
         }
         catch(NegativeArraySizeException e){
             System.out.println("Array size cannot be negative");
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("index not found");
         }
     }
 }
