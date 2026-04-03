@@ -8,7 +8,9 @@ public class StringException {
         Scanner sc=new Scanner(System.in);
        
         try{
-             String s= sc.nextLine();
+            int n=sc.nextInt();
+            int a[]=new int[n];
+            String s= sc.nextLine();
             int index=sc.nextInt();      
             System.out.print(s.charAt(index));
         }
@@ -17,6 +19,9 @@ public class StringException {
         }
         catch(InputMismatchException e){
             System.out.println("enter valid input");
+        }
+        catch(NegativeArraySizeException e){
+            System.out.println("Array size cannot be negative");
         }
     }
 }
