@@ -22,9 +22,9 @@ public class StringException {
         catch(InputMismatchException e){
             System.out.println("enter valid input");
         }
-        // catch(NegativeArraySizeException e){
-        //     System.out.println("Array size cannot be negative");
-        // }
+        catch(NegativeArraySizeException e){
+            System.out.println("Array size cannot be negative");
+        }
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("index not found");
         }
