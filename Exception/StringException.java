@@ -25,8 +25,8 @@ public class StringException {
         catch(NegativeArraySizeException e){
             System.out.println("Array size cannot be negative");
         }
-        catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("index not found");
-        }
+        // catch(ArrayIndexOutOfBoundsException e){
+        //     System.out.println("index not found");
+        // }
     }
 }
