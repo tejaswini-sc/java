@@ -51,7 +51,7 @@ public class Day4 {
 		String res1=CheckPrime1(n);
 		System.out.println(res1);
 		System.out.println(res1);
-		
+		sc.close();
 	}
 
 }
