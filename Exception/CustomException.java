@@ -34,6 +34,9 @@ class CustomException{
         catch(OverAgeException e){
             System.out.println(e.getMessage());
         }
+        finally{
+            sc.close();
+        }
     }
     
 }
