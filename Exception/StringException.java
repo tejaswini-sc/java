@@ -8,8 +8,8 @@ public class StringException {
         Scanner sc=new Scanner(System.in);
        
         try{
-            int n=sc.nextInt();
-            int a[]=new int[n];
+            // int n=sc.nextInt();
+            // // int a[]=new int[n];
             int b[]={1,2,3,4,5};
             String s= sc.nextLine();
             int index=sc.nextInt();      
@@ -28,5 +28,9 @@ public class StringException {
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("index not found");
         }
+        finally{
+            System.out.println("opertion end");
+        }
+        sc.close();
     }
 }
