@@ -29,5 +29,6 @@ public class Encapsulation {
     b.setData(bal);
     int res= b.getData();
     System.out.println(res);
+    
     }
 }
