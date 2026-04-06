@@ -40,10 +40,10 @@ class Bankk{
        {
         System.out.println(e.getMessage());
         a.acceptInput();
-        try{
-            a.verify();
+        // try{
+        //     a.verify();
 
-        }
+        // }
        }
     }
 }
