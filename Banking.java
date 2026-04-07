@@ -46,7 +46,14 @@ class Bankk{
         {
             System.out.println(e1.getMessage());
             a.acceptInput();
+            try{
+            a.verify();
+        }catch(Exception e2)
+        {
+            System.out.println(e2.getMessage());
+            a.acceptInput();
 
+        }
         }
        }
     }
