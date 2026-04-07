@@ -49,11 +49,11 @@ class Bankk{
             try{
             a.verify();
         }catch(Exception e2)
-        // {
-        //     System.out.println(e2.getMessage());
-        //     a.acceptInput();
+        {
+            System.out.println(e2.getMessage());
+            a.acceptInput();
 
-        // }
+        }
         }
        }
     }
