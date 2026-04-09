@@ -33,6 +33,7 @@ public class Customers {
         
         System.out.println(c.getcId());
         System.out.println(c.getcName());
+System.out.println(c.getcPhone());
         
     }    
 }
