@@ -6,7 +6,7 @@ public class Demo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        ArrayList<Integer> l = new ArrayList<Integer>();
+        LinkedList<Integer> l = new LinkedList<Integer>();
 
         int n = sc.nextInt();
         int a[] = new int[n];
@@ -19,6 +19,7 @@ public class Demo {
             l.add(a[i]);   
         }
         l.sort(null);
+
         System.out.println(l.get(3));
     }
 }
