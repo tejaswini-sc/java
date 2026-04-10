@@ -16,9 +16,9 @@ public class Demo {
         }
 
         for(int i = 0; i < n; i++){
-            l.add(a[i]);   // FIXED HERE
+            l.add(a[i]);   
         }
         l.sort(null);
-        System.out.println(l);
+        System.out.println(l.get(3));
     }
 }
