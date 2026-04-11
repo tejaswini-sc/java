@@ -20,15 +20,3 @@ class Bank
     }
 }
 
-
-public class Encapsulation {
-    public static void main(String[] args) {
-    Scanner s=new Scanner(System.in);
-    int bal = s.nextInt();
-    Bank b = new Bank();   
-    b.setData(bal);
-    int res= b.getData();
-    System.out.println(res);
-    
-    }
-}
