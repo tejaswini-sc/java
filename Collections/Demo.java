@@ -20,6 +20,6 @@ public class Demo {
         }
         l.sort(null);
 
-        System.out.println(l.get(3));
+       
     }
 }
