@@ -18,7 +18,7 @@ public class BusRouteManagement {
             System.out.println("3. Search Stop");
             System.out.println("4. Display Stops");
             System.out.println("5. Update Stop");
-            System.out.println("6. Extra Operations");
+            System.out.println("6. Extra gOperations");
             System.out.println("7. Exit");
             System.out.print("Enter choice: ");
             choice=sc.nextInt();
@@ -58,8 +58,17 @@ public class BusRouteManagement {
             		stop.remove(removestop);
             	}
             	break;
-            // case 3:
-            // 	System.out.print
+            case 3:
+            	System.out.println("enter stop to search");
+				String search=sc.nextLine();
+				if(stop.contains(stopname)){
+					System.out.println("found at index"+stop.indexOf(search));
+				}
+				else{
+					System.out.println("stop not found");
+				}
+				break;
+			
             }
             
             
