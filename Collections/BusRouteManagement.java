@@ -61,7 +61,7 @@ public class BusRouteManagement {
             case 3:
             	System.out.println("enter stop to search");
 				String search=sc.nextLine();
-				if(stop.contains(stopname)){
+				if(stop.contains(search)){
 					System.out.println("found at index"+stop.indexOf(search));
 				}
 				else{
