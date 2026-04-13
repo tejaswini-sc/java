@@ -68,13 +68,20 @@ public class BusRouteManagement {
 					System.out.println("stop not found");
 				}
 				break;
-			
-            }
+			case 4:
+				System.out.println("stops");
+				for(int i=0;i<stop.size();i++){
+					System.out.println(stop.get(i));
+				}
             
-            
-            
-			
-		}
+            case 5:
+				System.out.println("exiting....");
+				break;
+			default:
+				System.out.println("invalid");
+			}
+		}while (choice!=7);
+		sc.close();
 		
 	}
 
