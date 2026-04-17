@@ -75,6 +75,6 @@ route.addFirst(history.removeLast());
 System.out.println("After back: " + route.peekFirst());
         
 
-        // System.out.println(route);
+        System.out.println(route);
     }
 }
