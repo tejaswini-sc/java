@@ -78,8 +78,8 @@ public class BusRouteManagement {
 				System.out.println("exiting....");
 				break;
 			default:
-				System.out.println("invalid");
-			}
+				System.out.println("invalid")
+			};
 		}while (choice!=7);
 		sc.close();
 		
