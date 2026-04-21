@@ -1,3 +1,4 @@
+package loops;
 import java.util.Scanner;
 public class Lcf1 {
     static int Min(int a,int b)

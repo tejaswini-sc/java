@@ -1,3 +1,4 @@
+package loops;
 import java.util.Scanner;
 public class Hcf {
     public static void main(String[] args) {
