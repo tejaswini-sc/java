@@ -1,3 +1,5 @@
+package Inheritance;
+
 class EducationInstitue
 {
 	void admitStud()
