@@ -1,6 +1,7 @@
 
 package Collections;
 
+import java.util.*;
 import java.util.Objects;
 
 class Stud{
@@ -27,17 +28,20 @@ class Stud{
 		return id == other.id && Objects.equals(name, other.name);
 	}
 
-	
-	
 }
 public class TreeSett {
 	public static void main(String[] args) {
+		
+		ArrayList<Stud> al=new ArrayList<Stud>();
 		Stud s1=new Stud(1, "teju");
 		Stud s2=new Stud(1, "teju");
 		
 //		String n1="teju";
 //		String n2 ="teju";
 //		System.out.println(n1.equals(n2));
-		System.out.println(s1.equals(s2));
+//		System.out.println(s1.equals(s2));
+//		n1.compareTo(n2);
+		Collections.sort(al);
+		
 	}
 }
