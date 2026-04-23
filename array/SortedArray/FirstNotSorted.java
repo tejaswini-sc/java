@@ -1,4 +1,4 @@
-package SortedArray;
+package array.SortedArray;
 import java.util.Scanner;
 
 public class FirstNotSorted {
