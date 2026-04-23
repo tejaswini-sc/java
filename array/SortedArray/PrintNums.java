@@ -1,4 +1,4 @@
-package SortedArray;
+package array.SortedArray;
 import java.util.*;
 public class PrintNums {
     public static void arraywithoutrepeat(int a[])
