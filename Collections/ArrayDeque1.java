@@ -25,12 +25,12 @@ public class ArrayDeque1 {
         // dq.add("BTM");
         // dq.add("Silk board");
         // dq.add("Electronic city");
-        // dq.addFirst("emergency stop");
-        // System.out.println(dq);
-        // dq.removeLast();
-        // System.out.println(dq);
-        // System.out.println(dq.peekFirst());
-        // System.out.println(dq.peekLast());
+        dq.addFirst("emergency stop");
+        System.out.println(dq);
+        dq.removeLast();
+        System.out.println(dq);
+        System.out.println(dq.peekFirst());
+         System.out.println(dq.peekLast());
 
 
         dq.add("A");
