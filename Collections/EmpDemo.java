@@ -68,8 +68,10 @@ class Empp implements Comparable<Empp>{
 	
 	@Override
 	public int compareTo(Empp o) {
-		// TODO Auto-generated method stub
-		return Integer.valueOf(this.id).compareTo(o.id);
+//		// TODO Auto-generated method stub
+		if(this.id==o.id)
+			return this.name.compareTo(o.name);
+		return Integer.compare(this.id,o.id);
 	}
 	
 	
@@ -85,12 +87,15 @@ public class EmpDemo {
 		set.add(new Empp(5, "kursii"));
 		set.add(new Empp(5, "kursii"));
 		set.add(new Empp(6,"swapna"));
+		set.add(new Empp(6,"swapn"));
+		set.add(new Empp(6,"swapna"));
 		
 		ArrayList<Empp> al= new ArrayList<>(set); 
 		
 		Collections.sort(al);
 		
-		System.out.print(set);
+		System.out.println(set);
+		System.out.println(al);
 
 	}
 
