@@ -15,16 +15,10 @@ class Empp implements Comparable<Empp>{
 		this.name=name;
 	}
 
-	/**
-	 * @return the id
-	 */
 	public int getId() {
 		return id;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -89,6 +83,7 @@ public class EmpDemo {
 		set.add(new Empp(6,"swapna"));
 		set.add(new Empp(6,"swapn"));
 		set.add(new Empp(6,"swapna"));
+		
 		
 		ArrayList<Empp> al= new ArrayList<>(set); 
 		
