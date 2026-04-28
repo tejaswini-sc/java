@@ -31,7 +31,6 @@ public class TreadDemo1{
         Thread t= new Thread(a);
         t.start();
         Thread t1= new Thread(pc);
-        t1.start();
 
     }
 }
