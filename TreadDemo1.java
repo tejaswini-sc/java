@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class adds extends Thread {
+class adds implements Runnable {
     @Override
     public void run() {
         Scanner sc = new Scanner(System.in);
@@ -10,7 +10,7 @@ class adds extends Thread {
     }
 }
 
-class printChars extends Thread {
+class printChars implements Runnable {
     @Override
     public void run() {
         for (char i = 65; i < 70; i++) {
@@ -24,12 +24,14 @@ class printChars extends Thread {
     }
 }
 
-public class TreadDemo1 extends Thread {
+public class TreadDemo1{
     public static void main(String[] args) {
         adds a = new adds();
         printChars pc = new printChars();
-        a.start();
-        pc.start();
+        Thread t= new Thread(a);
+        t.start();
+        Thread t1= new Thread(pc);
+        t1.start();
 
     }
 }
