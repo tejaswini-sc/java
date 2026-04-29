@@ -7,6 +7,7 @@ public class ThreadLamdaDemo {
 	public static void main(String[] args) {
 
 		Thread t =new Thread(()->{
+			
 			Scanner sc=new Scanner(System.in);
 			System.out.println(sc.nextInt()+sc.nextInt());
 		});
