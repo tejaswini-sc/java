@@ -6,12 +6,14 @@ class Demo extends Thread {
     public void run(){
 
         String name = getName();
-        if(name.equals("AddNumber"))
-            add();
-        else if(name.equals("Characters"))
-            printChars();
-        else
-            printNums();
+        // if(name.equals("AddNumber"))
+        //     add();
+        // else if(name.equals("Characters"))
+        //     printChars();
+        // else
+        //     printNums();
+
+        
     }  
     void add(){
         Scanner sc=new Scanner(System.in);
