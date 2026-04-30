@@ -31,7 +31,10 @@ class autoSave extends Thread {
 
 public class Eclpise {
     public static void main(String[] args) {
-       
+        System.out.println(LocalDate.now());
+        System.out.println(LocalTime.now());
+        
+        DateTimeFormatter form=DateTimeFormatter.ofPattern("hh:mm");
         autoSave as=new autoSave();
         as.setDaemon(true);
         as.start();
