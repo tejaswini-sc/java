@@ -33,8 +33,10 @@ public class Eclpise {
     public static void main(String[] args) {
         System.out.println(LocalDate.now());
         System.out.println(LocalTime.now());
-        
+        LocalTime time=LocalTime.now();
         DateTimeFormatter form=DateTimeFormatter.ofPattern("hh:mm");
+        String finaltime=time.format(form);
+        System.out.println(finaltime);
         autoSave as=new autoSave();
         as.setDaemon(true);
         as.start();
