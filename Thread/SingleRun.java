@@ -12,8 +12,7 @@ class Demo extends Thread {
         //     printChars();
         // else
         //     printNums();
-
-        
+        name.equals("AddNumber")?add():name.equals("Characters")?printChars():printNums();        
     }  
     void add(){
         Scanner sc=new Scanner(System.in);
