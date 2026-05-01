@@ -38,8 +38,6 @@ public class Eclpise {
         String finaltime=time.format(form);
         System.out.println(finaltime);
         autoSave as=new autoSave();
-        as.setDaemon(true);
-        as.start();
-
+        
     }
 }
