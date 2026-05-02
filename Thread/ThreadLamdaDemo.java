@@ -26,7 +26,5 @@ public class ThreadLamdaDemo {
 		});
 
 		
-		t.start();
-		t1.start();
 	}
 }
