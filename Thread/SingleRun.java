@@ -58,8 +58,5 @@ public class SingleRun {
         d1.setName("Characters");
         d1.start();
 
-        Demo d2=new Demo();
-        d2.setName("Nums");
-        d2.start();
     }
 }
