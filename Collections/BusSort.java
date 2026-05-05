@@ -39,7 +39,7 @@ public class BusSort {
 		String a[]=s.split(",");
 		Bus []e=new Bus[n];
 		for(int i=0;i<n;i++) {
-			e[0]=a[0];
+			// e[0]=a[0];
 			
 		}
 		
