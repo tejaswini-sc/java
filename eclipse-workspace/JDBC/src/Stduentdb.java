@@ -23,12 +23,23 @@ public class Stduentdb {
 			//	create sql statement
 			Statement stmt = con.createStatement();
 			
-			String query = "SELECT id, firstName, lastName, age FROM student";
-			ResultSet res = stmt.executeQuery(query);
+			// String query = "SELECT id, firstName, lastName, age FROM student";
+			String query = "Delete from student where id=1";
+			int rowsAffected = stmt.executeUpdate(query);
 			
-			while(res.next()) {
-				int id =res.getInt("id");
-				String fname = res.getString("firstName");
+			System.out.println("Rows affected: " + rowsAffected);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}
+
 				String lname= res.getString("lastName");
 				int age = res.getInt("age");
 				System.out.printf("%-2d %-6s %-7s %-2d%n", id, fname, lname, age);
