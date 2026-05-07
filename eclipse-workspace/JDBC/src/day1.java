@@ -34,6 +34,8 @@ public class day1 {
 			
 			String UPDATE_QUERY="update course set credit_value = 2 where course_code = 101";
 			String INSERT_QUERY="insert into course values(104,'SQL',6)";
+			String DELETE_QUERY = "delete from course where course_code =101";
+
 			
 			res =stm.executeUpdate(INSERT_QUERY);
 
