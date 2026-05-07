@@ -10,29 +10,38 @@ public class day1 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		static final String url ="jdbc:mysql://localhost:3306/student";
+		String url ="jdbc:mysql://localhost:3306/student";
 		String username="root";
 		String password="teju";
 		
+		
 		Connection conn=null;
 		Statement stm=null;
-		ResultSet res=null;
+		ResultSet select = null;
+		int res;
+		
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("driver loaded");
 			
-			 conn = DriverManager.getConnection(url, username, password);
+			conn = DriverManager.getConnection(url, username, password);
 			System.out.println("connection established");
 			
 			 stm = conn.createStatement();
 			
 			String query="select *from course";
 			
-			 res = stm.executeQuery(query);
+			String UPDATE_QUERY="update course set credit_value = 2 where course_code = 101";
+			String INSERT_QUERY="insert into course values(104,'SQL',6)";
+			
+			res =stm.executeUpdate(INSERT_QUERY);
+
+			System.out.println(res);
+			 select = stm.executeQuery(query);
 			System.out.println("excute query");
 			
-			printQuery(res);
+			printQuery(select);
 			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -43,8 +52,8 @@ public class day1 {
 		finally {
 
 			try {
-				if(res!=null)
-					res.close();
+				if(select!=null)
+					select.close();
 				else if(stm!=null)
 					stm.close();
 				else if(conn!=null)
@@ -52,10 +61,10 @@ public class day1 {
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-			
+			}			
 		}
 	}
+	
 	public static void printQuery(ResultSet res) throws SQLException {
 		while(res.next()) {
 			int ccode =res.getInt("course_code");
@@ -65,4 +74,5 @@ public class day1 {
 			System.out.println(ccode+" "+" "+title+" "+credit+" ");				
 		}
 	}
+	
 }
