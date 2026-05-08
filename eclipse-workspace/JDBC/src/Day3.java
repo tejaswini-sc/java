@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.*;
 
 public class Day3 {
-	static final String url ="jdbc:mysql://localhost:3306/student";
+	static final String url = "jdbc:mysql://localhost:3306/student";
 	static final String username="root";
 	static final String password="teju";
 	public static void main(String[] args) {
@@ -21,13 +21,14 @@ public class Day3 {
 			int cc=sc.nextInt();
 			int cv=sc.nextInt();
 			
-			cc.setInt(1,cc);
-			cv.setInt(2,cv);
-			
 			PreparedStatement ptsmt =con.prepareStatement(query);
+			
+			ptsmt.setInt(1,cv);
+			ptsmt.setInt(2,cc);
 			
 			int executeUpdate = ptsmt.executeUpdate();
 			
+			system.out.println(executeUpdate);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
