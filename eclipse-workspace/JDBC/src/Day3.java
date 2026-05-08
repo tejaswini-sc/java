@@ -28,7 +28,6 @@ public class Day3 {
 			
 			int executeUpdate = ptsmt.executeUpdate();
 			
-			system.out.println(executeUpdate);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
