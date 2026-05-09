@@ -60,7 +60,9 @@ public class Bookdemo {
 		al.add(new Book(5, "java"));
 		al.add(new Book(23, "aaaa"));
 		
-		
+	Collections.sort(al);
+		System.out.println(al);
+	
 	}
 
 }
