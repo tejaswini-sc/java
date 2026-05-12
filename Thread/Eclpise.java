@@ -40,10 +40,5 @@ public class Eclpise {
         autoSave as=new autoSave();
 as.setDaemon(true);
         as.start();
-<<<<<<< HEAD
-=======
-
-        
->>>>>>> 5ecae85af3408b845fdc35ef7b78263becc34b1d
     }
 }

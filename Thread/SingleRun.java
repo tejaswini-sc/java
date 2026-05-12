@@ -6,13 +6,13 @@ class Demo extends Thread {
     public void run(){
 
         String name = getName();
-        // if(name.equals("AddNumber"))
-        //     add();
-        // else if(name.equals("Characters"))
-        //     printChars();
-        // else
-        //     printNums();
-        name.equals("AddNumber")?add():name.equals("Characters")?printChars():printNums();        
+      
+        if(name.equals("AddNumber"))
+            add();
+        else if(name.equals("Characters"))
+            printChars();
+        else
+            printNums();
     }  
     void add(){
         Scanner sc=new Scanner(System.in);
@@ -57,6 +57,6 @@ public class SingleRun {
         Demo d1 =new Demo();
         d1.setName("Characters");
         d1.start();
-.
+        
     }
 }
