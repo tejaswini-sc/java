@@ -2,7 +2,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.Scanner;
+
 
 class Student{
 	
@@ -27,12 +31,27 @@ class Student{
 			
 			addStud();
 
-			updateStud();
-			
-		} catch (ClassNotFoundException | SQLException e) {
-			// TODO Auto-generated catch block
+			// updateStud();
+			updateStudintro();
+
+		} catch (ClassNotFoundException | SQLException | FileNotFoundException e) {
 			e.printStackTrace();
 		}
+	}
+
+	private static void updateStudintro() throws SQLException, FileNotFoundException {
+		
+		PreparedStatement pstmt = con.prepareStatement(UPDATE_QUERY);
+		System.out.println("enter id to add intro");
+		int id =sc.nextInt();
+		
+		FileReader fr = new FileReader(path);
+		pstmt.setCharacterStream(1, fr);		
+		pstmt.setInt(2, id);
+		int res = pstmt.executeUpdate();
+		System.out.println(res);
+
+		
 	}
 
 	private static void updateStud() throws SQLException, FileNotFoundException {
