@@ -49,9 +49,7 @@ class Student{
 		pstmt.setCharacterStream(1, fr);		
 		pstmt.setInt(2, id);
 		int res = pstmt.executeUpdate();
-		System.out.println(res);
-
-		
+		System.out.println(res);	
 	}
 
 	private static void updateStud() throws SQLException, FileNotFoundException {
@@ -68,31 +66,5 @@ class Student{
 		
 	}
 
-	private static void addStud() throws SQLException {
-		pstmt = con.prepareStatement(INSERT_QUERY);
-		
-		System.out.println("enter the studnet id");
-		int id= sc.nextInt();
-		
-		System.out.println("enter the studnet name");
-		String name= sc.next();
-		
-		System.out.println("enter the studnet email");
-		String email= sc.next();
-		
-		System.out.println("enter the branch");
-		String branch=sc.next();
-		
-		System.out.println("enter cgpa");
-		float cgpa=sc.nextFloat();
-		
-		pstmt.setInt(1, id);
-		pstmt.setString(2, name);
-		pstmt.setString(3, email);
-		pstmt.setString(4, branch);
-		pstmt.setFloat(5, cgpa);
-		
-		int res = pstmt.executeUpdate();
-		System.out.println(res);	
-	}
+
 }
