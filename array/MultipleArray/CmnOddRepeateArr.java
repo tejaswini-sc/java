@@ -1,4 +1,4 @@
-package MultipleArray;
+package array.MultipleArray;
 
 import java.util.Scanner;
 

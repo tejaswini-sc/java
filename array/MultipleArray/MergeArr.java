@@ -1,5 +1,4 @@
-package MultipleArray;
-
+package array.MultipleArray;
 import java.util.Scanner;
 
 public class MergeArr {

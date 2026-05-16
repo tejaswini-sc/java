@@ -1,4 +1,4 @@
-package MultipleArray;
+package array.MultipleArray;
 import java.util.Scanner;
 public class RearrangeArr1 {
      public static void main(String[] args) {
